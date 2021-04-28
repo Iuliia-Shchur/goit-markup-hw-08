@@ -13,7 +13,7 @@
 
 @each $features in antenna, clock, diagram, astronaut {
   .#{$features}-icon::before {
-    background-image: url('../../img/#{$features}.svg');
+    background-image: url('../../img/features/#{$features}.svg');
   }
 }
 
