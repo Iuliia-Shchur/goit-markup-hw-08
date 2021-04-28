@@ -43,20 +43,9 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
-
-  @media screen and (max-width: 480px) {
-    text-align: center;
-  }
 }
 
 .features__text {
   line-height: 1.71;
   color: var(--secondary-text-color);
-}
-
-.features-list__item {
-  @media screen and (max-width: 480px) {
-    max-width: 450px;
-    margin-bottom: 30px;
-  }
 }
