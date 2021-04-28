@@ -11,10 +11,9 @@
   background-position: center;
 }
 
-$icons: 'antenna', 'clock', 'diagram', 'astronaut';
-@each $iconsName in icons {
-  icon-#{iconsName} {
-    background-image: url(../img/features);
+@each $features in antenna, clock, diagram, astronaut {
+  .#{$features}-icon::before {
+    background-image: url('../../img/#{$features}.svg');
   }
 }
 

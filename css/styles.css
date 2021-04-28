@@ -736,8 +736,20 @@ img {
   background-position: center;
 }
 
-icon-iconsName {
-  background-image: url(../img/features);
+.antenna-icon::before {
+  background-image: url("../../img/antenna.svg");
+}
+
+.clock-icon::before {
+  background-image: url("../../img/clock.svg");
+}
+
+.diagram-icon::before {
+  background-image: url("../../img/diagram.svg");
+}
+
+.astronaut-icon::before {
+  background-image: url("../../img/astronaut.svg");
 }
 
 .features__title {
