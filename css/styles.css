@@ -737,19 +737,19 @@ img {
 }
 
 .antenna-icon::before {
-  background-image: url("../../img/features/antenna.svg");
+  background-image: url("../img/features/antenna.svg");
 }
 
 .clock-icon::before {
-  background-image: url("../../img/features/clock.svg");
+  background-image: url("../img/features/clock.svg");
 }
 
 .diagram-icon::before {
-  background-image: url("../../img/features/diagram.svg");
+  background-image: url("../img/features/diagram.svg");
 }
 
 .astronaut-icon::before {
-  background-image: url("../../img/features/astronaut.svg");
+  background-image: url("../img/features/astronaut.svg");
 }
 
 .features__title {
