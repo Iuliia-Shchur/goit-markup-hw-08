@@ -1,7 +1,7 @@
 .features-list__item::before {
   display: block;
   content: '';
-  width: 270px;
+  // width: 270px;
   height: 120px;
   background-repeat: no-repeat;
   background-size: 70px 70px;
@@ -43,9 +43,20 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
 }
 
 .features__text {
   line-height: 1.71;
   color: var(--secondary-text-color);
+}
+
+.features-list__item {
+  @media screen and (max-width: 480px) {
+    max-width: 450px;
+    margin-bottom: 30px;
+  }
 }
