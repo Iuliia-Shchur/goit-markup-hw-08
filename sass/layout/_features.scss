@@ -1,7 +1,25 @@
+.features-list__item {
+  --grid-item: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    --grid-item: 2;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    --grid-item: 4;
+    width: 270px;
+  }
+}
+
 .features-list__item::before {
   display: block;
   content: '';
-  // width: 270px;
+  width: 450px;
   height: 120px;
   background-repeat: no-repeat;
   background-size: 70px 70px;
@@ -9,6 +27,14 @@
   border-radius: 4px;
   background-color: #f5f4fa;
   background-position: center;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 @each $features in antenna, clock, diagram, astronaut {
@@ -43,6 +69,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .features__text {
