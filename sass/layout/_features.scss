@@ -1,12 +1,12 @@
 @media screen and (min-width: 768px) {
   .features-list__item {
-    --grid-item: 2;
+    --grid__item: 2;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features-list__item {
-    --grid-item: 4;
+    --grid__item: 4;
   }
 }
 

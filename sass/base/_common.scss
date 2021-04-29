@@ -56,3 +56,9 @@ img {
 .link {
   text-decoration: none;
 }
+
+.list-item {
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 30px;
+  }
+}
