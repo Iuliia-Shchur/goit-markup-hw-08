@@ -1,9 +1,8 @@
-.clients {
-  display: flex;
-  flex-wrap: wrap;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-}
+// .clients {
+//   display: flex;
+//   flex-wrap: wrap;
+
+// }
 
 .clients__title {
   font-weight: 700;
@@ -23,7 +22,7 @@
     --grid__item: 3;
   }
   @media screen and (min-width: 1200px) {
-    --grid__item: 4;
+    --grid__item: 6;
   }
 
   &:hover .clients-list__link,
