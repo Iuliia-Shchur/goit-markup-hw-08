@@ -43,6 +43,23 @@
   }
 }
 
+.features__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+  }
+}
+
+.features__text {
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
+
 // .features-list__item--icon-antenna::before {
 //   content: '';
 //   background-image: url(../img/features/antenna.svg);
@@ -62,20 +79,3 @@
 //   content: '';
 //   background-image: url(../img/features/astronaut.svg);
 // }
-
-.features__title {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
-}
-
-.features__text {
-  line-height: 1.71;
-  color: var(--secondary-text-color);
-}
