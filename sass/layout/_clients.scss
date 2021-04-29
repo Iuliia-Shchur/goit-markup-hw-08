@@ -1,7 +1,8 @@
 .clients {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  flex-wrap: wrap;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
 }
 
 .clients__title {
@@ -14,7 +15,16 @@
 }
 
 .clients-list__item {
-  --grid__item: 6;
+  @media screen and (max-width: 768px) {
+    --grid__item: 2;
+  }
+
+  @media screen and (min-width: 768px) {
+    --grid__item: 3;
+  }
+  @media screen and (min-width: 1200px) {
+    --grid__item: 4;
+  }
 
   &:hover .clients-list__link,
   &:focus .clients-list__link {
@@ -27,7 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  // width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -37,4 +47,15 @@
   &:focus .clients-list__icon {
     fill: var(--primary-logo-color);
   }
+
+  // @media screen and (max-width: 767.98px) {
+  //   max-width: 210px;
+  // }
+  // @media screen and (min-width: 768px) {
+  //   width: 226px;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   width: 170px;
+  // }
 }

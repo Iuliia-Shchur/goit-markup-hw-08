@@ -1,3 +1,10 @@
+.about {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .about--padding {
   padding-top: 0;
 }
@@ -24,5 +31,7 @@
 }
 
 .about-list__item {
-  --grid__item: 3;
+  @media screen and (min-width: 1200px) {
+    --grid__item: 3;
+  }
 }
