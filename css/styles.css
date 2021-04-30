@@ -1027,6 +1027,8 @@ img {
 .gallery-cards-item {
   display: flex;
   align-items: stretch;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .gallery-cards-item:hover .gallery-cards-item__thumb::before, .gallery-cards-item:hover
@@ -1039,10 +1041,6 @@ img {
 .gallery-cards-item__thumb--hidden-text {
   transform: translateY(0);
   opacity: 1;
-}
-
-.gallery-cards-item__link {
-  border: 1px solid #eeeeee;
 }
 
 .gallery-cards-item__meta {

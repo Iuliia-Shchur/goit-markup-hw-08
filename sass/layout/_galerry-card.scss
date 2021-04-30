@@ -18,6 +18,8 @@
 .gallery-cards-item {
   display: flex;
   align-items: stretch;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 // &:hover .gallery-cards-item__thumb::before,
@@ -44,13 +46,9 @@
   }
 }
 
-.gallery-cards-item__link {
-  border: 1px solid #eeeeee;
-}
-
 .gallery-cards-item__meta {
   padding: 20px 24px;
-  // border: 1px solid #eeeeee;
+
   background: var(--address-color);
 }
 
