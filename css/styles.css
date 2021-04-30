@@ -1015,7 +1015,7 @@ img {
 
 .gallery-cards-item {
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   border: 1px solid #eeeeee;
   border-top: none;
 }
