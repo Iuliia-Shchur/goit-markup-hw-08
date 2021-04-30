@@ -1169,7 +1169,7 @@ img {
   fill: var(--address-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -1197,11 +1197,19 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    display: flex;
+    align-items: baseline;
+  }
   .footer-contacts {
     flex-basis: calc((50%-45px) / 2);
   }
   .footer-social {
     flex-basis: calc((50%-45px) / 2);
+  }
+  .footer-form--flex {
+    display: flex;
+    flex-basis: calc(50%-15px);
   }
 }
 /*# sourceMappingURL=styles.css.map */
