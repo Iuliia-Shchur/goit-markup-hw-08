@@ -1168,42 +1168,37 @@ img {
   fill: var(--address-color);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer__wrapper {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: baseline;
   }
-  .footer--tablet {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: baseline;
+  .footer-form {
+    width: 100%;
   }
   .footer-contacts {
-    flex-basis: calc((50%-45px) / 2);
+    flex-basis: calc((100%-45px) / 2);
   }
   .footer-social {
-    flex-basis: calc((50%-45px) / 2);
+    flex-basis: calc((100%-45px) / 2);
   }
   .form-wrapper {
     display: inline-flex;
-    flex-basis: calc(50%-15px);
   }
   .footer-form--flex {
     display: flex;
+    flex-wrap: wrap;
   }
-}
-
-.footer--tablet {
-  flex-basis: 100%;
 }
 
 @media screen and (min-width: 1200px) {
   .footer-contacts {
-    flex-basis: calc((100%-45px) / 2);
+    flex-basis: calc((50%-45px) / 2);
   }
   .footer-social {
-    flex-basis: calc((100%-45px) / 2);
+    flex-basis: calc((50%-45px) / 2);
   }
 }
 /*# sourceMappingURL=styles.css.map */
