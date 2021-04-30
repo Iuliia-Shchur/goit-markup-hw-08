@@ -1049,7 +1049,6 @@ img {
 .footer-box {
   margin-bottom: 60px;
   text-align: center;
-  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1175,6 +1174,11 @@ img {
     flex-wrap: nowrap;
     align-items: baseline;
   }
+  .footer--tablet {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
   .footer-contacts {
     flex-basis: calc((50%-45px) / 2);
   }
@@ -1187,6 +1191,19 @@ img {
   }
   .footer-form--flex {
     display: flex;
+  }
+}
+
+.footer--tablet {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    flex-basis: calc((100%-45px) / 2);
+  }
+  .footer-social {
+    flex-basis: calc((100%-45px) / 2);
   }
 }
 /*# sourceMappingURL=styles.css.map */
