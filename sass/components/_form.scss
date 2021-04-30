@@ -1,53 +1,53 @@
-@media screen and (min-width: 1200px) {
-  .form-wrapper {
-    display: flex;
-    flex-basis: calc(50%-15px);
-  }
+// @media screen and (min-width: 1200px) {
+//   .form-wrapper {
+//     display: flex;
+//     flex-basis: calc(50%-15px);
+//   }
 
-  .footer-form {
-    max-width: 570px;
-  }
+//   .footer-form {
+//     max-width: 570px;
+//   }
 
-  .footer-form--flex {
-    display: flex;
-  }
-}
+//   .footer-form--flex {
+//     display: flex;
+//   }
+// }
 
-.footer-form__input {
-  width: 100%;
+// .footer-form__input {
+//   width: 100%;
 
-  height: 50px;
-  padding: 15px 16px;
-  margin-bottom: 20px;
+//   height: 50px;
+//   padding: 15px 16px;
+//   margin-bottom: 20px;
 
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background-color: var(--background-dark);
-  color: rgba(255, 255, 255, 0.6);
-  @media screen and (min-width: 1200px) {
-    margin-right: 12px;
-    width: 358px;
-  }
-}
+//   font-size: 16px;
+//   line-height: 1.25;
+//   letter-spacing: 0.03em;
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   border-radius: 4px;
+//   background-color: var(--background-dark);
+//   color: rgba(255, 255, 255, 0.6);
+//   @media screen and (min-width: 1200px) {
+//     margin-right: 12px;
+//     width: 358px;
+//   }
+// }
 
-.footer-form-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 28px;
-  margin-left: auto;
-  margin-right: auto;
+// .footer-form-button {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 10px 28px;
+//   margin-left: auto;
+//   margin-right: auto;
 
-  &:hover,
-  &:focus {
-    background-color: var(--primary-logo-color);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     background-color: var(--primary-logo-color);
+//   }
+// }
 
-.footer-form-button__icon {
-  margin-left: 10px;
-  fill: var(--address-color);
-}
+// .footer-form-button__icon {
+//   margin-left: 10px;
+//   fill: var(--address-color);
+// }
