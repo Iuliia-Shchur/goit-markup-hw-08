@@ -593,22 +593,23 @@ img {
 }
 
 .form-checkbox {
-  display: flex;
-  align-items: center;
   margin-bottom: 30px;
 }
 
 .form-checkbox__label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  text-align: start;
   font-size: 12px;
   line-height: 1.17;
+  white-space: nowrap;
   color: var(--secondary-text-color);
 }
 
 @media screen and (min-width: 1200px) {
   .form-checkbox__label {
     line-height: 1.71;
+    justify-content: center;
   }
 }
 
@@ -624,7 +625,7 @@ img {
 .form-checkbox__icon {
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 8px;
   fill: var(--address-color);
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
@@ -633,7 +634,6 @@ img {
 
 .form-checkbox__link {
   color: var(--primary-logo-color);
-  margin-left: 3px;
 }
 
 .form-button {
