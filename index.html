@@ -67,7 +67,7 @@
         </ul> -->
       
 
-      <button class="menu-open-button">
+      <button class="menu-open-button" data-menu-open>
         <svg width="40" height="40">
           <use class="menu-open__icon" href="./img/sprite/icons.svg#icon-menu"></use>
         </svg>
@@ -75,7 +75,7 @@
       
       </div>
 
-      <div class="menu">
+      <div class="menu is-hidden" data-menu>
         <ul class="list menu__list menu-nav ">
           <li class="menu-nav__item"><a class="menu-nav__item-link menu-nav__item-link--current link" href="./index.html">Студия</a></li>
           <li class="menu-nav__item"><a class="menu-nav__item-link link" href="./portfolio.html">Портфолио</a></li>
@@ -98,6 +98,11 @@
             <li class="menu-social__item"><a class="menu-social__item-link link" href="">LinkedIn</a></li>
           </ul>
         </div>
+        <button class="menu-close-button" data-menu-close>
+          <svg width="40" height="40">
+            <use class="menu-close__icon" href="./img/sprite/icons.svg#icon-close-1"></use>
+          </svg>
+        </button>
         
       
       </div>
@@ -531,6 +536,7 @@
             
               </div>
             </footer> -->
+            <script src="./js/mobile-menu.js"></script>
             <script src="./js/modal.js"></script>
             </body>
             
