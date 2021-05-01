@@ -296,27 +296,70 @@ img {
 
 .logo {
   display: block;
-  margin-right: 93px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--secondary-logo-color);
   text-decoration: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo--accent-color {
   color: var(--primary-logo-color);
 }
 
-.navigation-section {
-  display: flex;
-  align-items: center;
+.menu__list {
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.menu-nav__item {
+  font-size: 40px;
+  color: var(--primary-text-color);
+}
+
+.menu-contacts__item--tel-style {
+  font-size: 34px;
+  color: var(--primary-logo-color);
+}
+
+.menu-contacts__item--mail-style {
+  font-size: 24px;
+  color: var(--secondary-text-color);
+}
+
+.menu-social__item {
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--primary-logo-color);
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-section {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .navigation {
   display: flex;
   align-items: center;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: block;
+  }
 }
 
 .navigation-list__item:not(:last-child) {
@@ -358,6 +401,13 @@ img {
 .contact-list {
   display: flex;
   margin-left: auto;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-list {
+    display: block;
+  }
 }
 
 .contact-list__item:not(:last-child) {
@@ -463,12 +513,15 @@ img {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
+  overflow-y: scroll;
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
+  max-width: 450px;
+  max-height: 609px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--address-color);
@@ -476,17 +529,10 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-    height: 609px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -602,8 +648,13 @@ img {
   text-align: start;
   font-size: 12px;
   line-height: 1.17;
-  white-space: nowrap;
   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .form-checkbox__label {
+    white-space: nowrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {

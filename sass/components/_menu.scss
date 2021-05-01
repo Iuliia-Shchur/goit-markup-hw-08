@@ -1,0 +1,26 @@
+.menu__list {
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.menu-nav__item {
+  font-size: 40px;
+  color: var(--primary-text-color);
+}
+
+.menu-contacts__item--tel-style {
+  font-size: 34px;
+  color: var(--primary-logo-color);
+}
+
+.menu-contacts__item--mail-style {
+  font-size: 24px;
+  color: var(--secondary-text-color);
+}
+
+.menu-social__item {
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--primary-logo-color);
+}
