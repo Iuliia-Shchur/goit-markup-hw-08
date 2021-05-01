@@ -476,6 +476,20 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
+
 .modal__button {
   position: absolute;
   top: 0;
@@ -504,6 +518,7 @@ img {
 }
 
 .modal-form {
+  display: flex;
   flex-direction: column;
   padding: 40px;
 }
@@ -579,17 +594,22 @@ img {
 
 .form-checkbox {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
 
 .form-checkbox__label {
   display: flex;
-  justify-content: center;
   align-items: center;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .form-checkbox__label {
+    line-height: 1.71;
+  }
 }
 
 .form-checkbox__input {
