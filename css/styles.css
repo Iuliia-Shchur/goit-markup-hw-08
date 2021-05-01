@@ -308,7 +308,17 @@ img {
 
 @media screen and (min-width: 768px) {
   .logo {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -390,6 +400,12 @@ img {
   border: none;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-open-button {
+    display: none;
+  }
+}
+
 .menu-open__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -443,13 +459,11 @@ img {
 .navigation-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .navigation-section {
-    display: flex;
-    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -502,37 +516,53 @@ img {
 }
 
 .contact-list {
-  display: flex;
-  margin-left: auto;
   display: none;
 }
 
 @media screen and (min-width: 768px) {
   .contact-list {
     display: block;
+    flex-direction: column;
   }
 }
 
-.contact-list__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+  }
 }
 
-.contact-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-family: inherit;
-  font-weight: 500;
-  color: var(--secondary-text-color);
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1200px) {
+  .contact-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.contact-list__link:hover, .contact-list__link:focus, .contact-list__link:active {
-  color: var(--primary-logo-color);
+@media screen and (min-width: 768px) {
+  .contact-list__link {
+    font-family: inherit;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contact-list__link:hover, .contact-list__link:focus, .contact-list__link:active {
+    color: var(--primary-logo-color);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .contact-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contact-list__icon {
