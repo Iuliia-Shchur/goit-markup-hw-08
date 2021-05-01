@@ -376,12 +376,6 @@ img {
   align-items: center;
 }
 
-.menu-social__item {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
 .menu-open-button {
   background-color: var(--address-color);
   border: none;
@@ -394,6 +388,24 @@ img {
 .menu-open-button:hover .menu-open__icon,
 .menu-open-button:focus .menu-open__icon {
   fill: var(--primary-logo-color);
+}
+
+.menu-social__item:not(:last-child) {
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.menu-social__item:not(:last-child)::after {
+  position: absolute;
+  content: '';
+  display: block;
+  right: -16px;
+  bottom: 50%;
+  width: 22px;
+  background: rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
 
 .navigation-section {
