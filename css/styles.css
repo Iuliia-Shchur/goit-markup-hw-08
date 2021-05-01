@@ -340,11 +340,19 @@ img {
 
 .menu-nav__item {
   font-size: 40px;
-  color: var(--primary-text-color);
 }
 
 .menu-nav__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.menu-nav__item-link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.menu-nav__item-link--current {
+  color: var(--primary-logo-color);
 }
 
 .menu-contacts {
@@ -374,6 +382,7 @@ img {
 .menu-social {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu-open-button {
@@ -392,7 +401,6 @@ img {
 
 .menu-social__item:not(:last-child) {
   margin-right: 10px;
-  display: inline-block;
   position: relative;
 }
 

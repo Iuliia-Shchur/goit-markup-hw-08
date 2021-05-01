@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  // overflow: scroll;
 }
 
 .menu__list {
@@ -23,11 +24,18 @@
 
 .menu-nav__item {
   font-size: 40px;
-  color: var(--primary-text-color);
-
   &:not(:last-child) {
     margin-bottom: 32px;
   }
+}
+
+.menu-nav__item-link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.menu-nav__item-link--current {
+  color: var(--primary-logo-color);
 }
 
 .menu-contacts {
@@ -57,6 +65,8 @@
 .menu-social {
   display: flex;
   align-items: center;
+  // Если убрать wrap, то добавим скрол
+  flex-wrap: wrap;
 }
 
 .menu-open-button {
@@ -73,7 +83,6 @@
 }
 .menu-social__item:not(:last-child) {
   margin-right: 10px;
-  display: inline-block;
   position: relative;
 
   &::after {
