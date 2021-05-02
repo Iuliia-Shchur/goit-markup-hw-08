@@ -521,8 +521,10 @@ img {
 
 @media screen and (min-width: 768px) {
   .contact-list {
-    display: block;
+    display: flex;
     flex-direction: column;
+    margin-left: auto;
+    align-items: flex-start;
   }
 }
 
@@ -541,8 +543,17 @@ img {
   }
 }
 
+@media screen and (max-width: 1199.98px) {
+  .contact-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contact-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: inherit;
     font-weight: 500;
     color: var(--secondary-text-color);
