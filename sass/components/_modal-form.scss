@@ -52,11 +52,11 @@
     border-color: var(--primary-logo-color);
     outline: var(--primary-logo-color);
   }
+  &:hover + .form-field__icon,
+  &:focus + .form-field__icon {
+    fill: var(--primary-logo-color);
+  }
 }
-// &:hover + .form-field__icon,
-// &:focus + .form-field__icon {
-//   fill: var(--primary-logo-color);
-// }
 
 /* .form-field__input:focus-within {
   outline: var(--primary-logo-color);

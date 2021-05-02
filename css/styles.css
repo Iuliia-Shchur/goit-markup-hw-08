@@ -777,6 +777,11 @@ img {
   outline: var(--primary-logo-color);
 }
 
+.form-field__input:hover + .form-field__icon,
+.form-field__input:focus + .form-field__icon {
+  fill: var(--primary-logo-color);
+}
+
 /* .form-field__input:focus-within {
   outline: var(--primary-logo-color);
 } */
