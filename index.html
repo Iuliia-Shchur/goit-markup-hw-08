@@ -235,7 +235,7 @@
                 <ul class="list about-list grid">
                   <li class="list-item about-list__item grid__item">
                     <div class="about-list__thumb"> 
-                      <picture>
+                      <picture><source srcset="./img/about/box1.jpg 1x, ./img/about/box1@2x.jpg 2x"/>
                         <img src="./img/about/box1.jpg" alt="верстка" width="370">
                       </picture>
                       
@@ -244,7 +244,8 @@
                   </li>
                   <li class="list-item about-list__item grid__item">
                     <div class="about-list__thumb"> 
-                      <picture>
+                      <picture><source srcset="./img/about/box2.jpg 1x, ./img/about/box2@2x.jpg 2x""/>
+                                                
                         <img src="./img/about/box2.jpg" alt="приложения" width="370">   
                       </picture>
                       
@@ -253,7 +254,7 @@
                   </li>
                   <li class="list-item about-list__item grid__item">
                     <div class="about-list__thumb"> 
-                      <picture>
+                      <picture><source srcset="./img/about/box3.jpg 1x, ./img/about/box3@2x.jpg 2x/">
                         <img src="./img/about/box3.jpg" alt="стили" width="370">
                       </picture>
                       
@@ -270,9 +271,15 @@
                 <ul class="list team-list grid">
                   <li class="list-item team-list-card grid__item">
                     <picture>
-
+                      <source srcset="./img/team/desktop/i.d.desktop.jpg 1x, ./img/team/desktop/i.d.desktop@2x.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpeg" />
+                      <source srcset="./img/team/tablet/i.d.tablet.jpg 1x, ./img/team/tablet/i.d.tablet@2x.jpg 2x"
+                        media="(min-width: 768px)" type="image/jpeg" />
+                      <source srcset="./img/team/mobile/i.d.mobile.jpg 1x, ./img/team/mobile/i.d.mobile@2x.jpg 2x"
+                        media="(max-width: 767px)" type="image/jpeg" />
+                      <img class="team-list-card__image" src="./img/team/desktop/i.d.desktop.jpg" alt="Product designer" width="450">
                     </picture>
-                    <img class="team-list-card__image" src="./img/team/desktop/i.d.desktop.jpg" alt="Product designer" width="270">
+                    
                     <div class="team-list-card__meta">
                       <h3 class="team-list-card__name">Игорь Демьяненко</h3>
                       <p class="team-list-card__info" lang="en"> Product Designer</p>
@@ -310,7 +317,13 @@
                   </li>
                   <li class="list-item team-list-card grid__item">
                     <picture>
-                      <img class="team-list-card__image" src="./img/team/desktop/o.r.desktop.jpg" alt="Frontend developer" width="270">
+                      <source srcset="./img/team/desktop/o.r.desktop.jpg 1x, ./img/team/desktop/o.r.desktop@2x.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpeg" />
+                      <source srcset="./img/team/tablet/o.r.tablet.jpg 1x, ./img/team/tablet/o.r.tablet@2x.jpg 2x"
+                        media="(min-width: 768px)" type="image/jpeg" />
+                      <source srcset="./img/team/mobile/o.r.mobile.jpg 1x, ./img/team/mobile/o.r.mobile@2x.jpg 2x"
+                        media="(max-width: 767px)" type="image/jpeg" />
+                      <img class="team-list-card__image" src="./img/team/desktop/o.r.desktop.jpg" alt="Frontend developer" width="450">
                     </picture>
                     
                     <div class="team-list-card__meta">
@@ -350,7 +363,13 @@
                   </li>
                   <li class="list-item team-list-card grid__item">
                     <picture>
-                      <img class="team-list-card__image" src="./img/team/desktop/n.t.desktop.jpg" alt="Marketing" width="270">
+                      <source srcset="./img/team/desktop/n.t.desktop.jpg 1x, ./img/team/desktop/n.t.desktop@2x.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpeg" />
+                      <source srcset="./img/team/tablet/n.t.tablet.jpg 1x, ./img/team/tablet/n.t.tablet@2x.jpg 2x"
+                        media="(min-width: 768px)" type="image/jpeg" />
+                      <source srcset="./img/team/mobile/n.t.mobile.jpg 1x, ./img/team/mobile/n.t.mobile@2x.jpg 2x"
+                        media="(max-width: 767px)" type="image/jpeg" />
+                      <img class="team-list-card__image" src="./img/team/desktop/n.t.desktop.jpg" alt="Marketing" width="450">
                     </picture>
                     
                     <div class="team-list-card__meta">
@@ -390,7 +409,13 @@
                   </li>
                   <li class="list-item team-list-card grid__item">
                     <picture>
-                      <img class="team-list-card__image" src="./img/team/desktop/m.e.desktop.jpg" alt="Ui designer" width="270">
+                      <source srcset="./img/team/desktop/m.e.desktop.jpg 1x, ./img/team/desktop/m.e.desktop@2x.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpeg" />
+                      <source srcset="./img/team/tablet/m.e.tablet.jpg 1x, ./img/team/tablet/m.e.tablet@2x.jpg 2x"
+                        media="(min-width: 768px)" type="image/jpeg" />
+                      <source srcset="./img/team/mobile/m.e.mobile.jpg 1x, ./img/team/mobile/m.e.mobile@2x.jpg 2x"
+                        media="(max-width: 767px)" type="image/jpeg" />
+                      <img class="team-list-card__image" src="./img/team/desktop/m.e.desktop.jpg" alt="Ui designer" width="450">
                     </picture>
                     
                     <div class="team-list-card__meta">
