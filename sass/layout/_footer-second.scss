@@ -6,11 +6,16 @@
 }
 
 .footer-box {
-  margin-bottom: 60px;
   text-align: center;
 
   @media screen and (min-width: 1200px) {
     text-align: start;
+  }
+}
+
+.footer-box:not(:last-child) {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
 }

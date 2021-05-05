@@ -1334,13 +1334,21 @@ img {
 }
 
 .footer-box {
-  margin-bottom: 60px;
   text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
   .footer-box {
     text-align: start;
+  }
+}
+
+.footer-box:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-box:not(:last-child) {
     margin-bottom: 0;
   }
 }
